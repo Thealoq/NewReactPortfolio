@@ -33,7 +33,7 @@ export default function Home() {
     function ClickEvent() {
         State ? setBoolen(false) : setBoolen(true)
         if (State) {
-            refim.current.style.backgroundImage = `url(${User.spotify ? User.spotify.album_art_url : `https://cdn.discordapp.com/app-assets/${User.activities[0].application_id}/${User.activities[0].assets.large_image}.png?size=2048`})`
+            refim.current.style.backgroundImage = `url(${User.spotify ? User.spotify.album_art_url : `https://cdn.discordapp.com/app-assets/${User.activities[0]?.application_id}/${User.activities[0]?.assets.large_image}.png?size=2048`})`
             setTitle(" ")
         } else {
             refim.current.style.backgroundImage = `linear-gradient(to right, #576076, #455a7d)`
