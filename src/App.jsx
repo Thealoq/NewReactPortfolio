@@ -12,8 +12,8 @@ import About from "./Views/About"
 export default function App() {
   return (
     <div>
-      <div className="flex justify-center items-center">
-        <div className="w-[300px] bg-[#283044] rounded-t-[20px] text-white h-[60vh] md:h-[55vh] flex justify-center items-start">
+      <div className="flex justify-center items-center ">
+        <div className="w-[300px] bg-[#283044] rounded-t-[20px] text-white h-[530px]  flex justify-center items-start">
           <div className="flex justify-center items-center flex-col">
             <Router>
             <Navbar/>

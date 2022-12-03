@@ -1,7 +1,8 @@
 import { GoRepo } from 'react-icons/go';
 import { MdInfo } from 'react-icons/md';
+import { FaDiscord } from 'react-icons/fa';
 import { BsSpotify } from 'react-icons/bs';
-
+import { AiFillInstagram,AiFillGithub,AiFillYoutube,AiFillFolderOpen } from 'react-icons/ai';
 
 import React, { useEffect, useState } from 'react'
 export default function Home() {
@@ -21,12 +22,12 @@ export default function Home() {
     function ChangeText() {
         if (User) {
             if (User.spotify) {
-                setTitle(`${User?.spotify.song} - ${User?.spotify.artist}`,<BsSpotify fontSize={24}  />)
+                setTitle(`${User?.spotify.song} - ${User?.spotify.artist}`)
             } else {
-                setTitle(`${User?.activities.filter(t => t.name != "Spotify")[0].name}`)
+                setTitle(`${User?.activities.filter(t => t.name != "Spotify")[0]?.name}`)
             }
         } else {
-            setTitle(`Aktif Değil`)
+            setTitle(`offline 🔴`)
         }
     }
     function ClickEvent() {
@@ -50,28 +51,28 @@ export default function Home() {
             icon: <MdInfo fontSize={24} />
         },
         {
-            url: "/repo",
-            icon: <GoRepo fontSize={24} />
+            url: "https://www.instagram.com/thealoq/",
+            icon: <AiFillInstagram fontSize={24} />
         },
         {
-            url: "/about",
-            icon: <MdInfo fontSize={24} />
+            url: "https://github.com/thealoq",
+            icon: <AiFillGithub fontSize={24} />
         },
         {
-            url: "/repo",
-            icon: <GoRepo fontSize={24} />
+            url: "https://www.youtube.com/channel/UCdRdD1r4IB0xI9PcFoTkLBg",
+            icon: <AiFillYoutube fontSize={24} />
         },
         {
-            url: "/about",
-            icon: <MdInfo fontSize={24} />
+            url: "https://github.com/thealoq",
+            icon: <AiFillGithub fontSize={24} />
         },
         {
-            url: "/repo",
-            icon: <GoRepo fontSize={24} />
+            url: "https://github.com/Thealoq/NewReactPortfolio",
+            icon: <AiFillFolderOpen fontSize={24} />
         },
         {
-            url: "/about",
-            icon: <MdInfo fontSize={24} />
+            url: "https://discord.gg/QMZTub8P",
+            icon: <FaDiscord fontSize={24} />
         },
     
     ]

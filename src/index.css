@@ -13,14 +13,22 @@ body {
   margin : 0;
   font-family: var(--font);
   box-sizing: border-box;
-  background-color: #242424;
+  background-color: #060607;
   color: white;
   font-size: 16px;
   font-weight: 500;
+
+  background-image: url(https://snippets.alexandru.so/grid.svg);
 }
 
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.test {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
