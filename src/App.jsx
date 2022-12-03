@@ -3,7 +3,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Button from "./Layout/button";
+import Button from "./Layout/Button";
 import Navbar from "./Layout/Navbar";
 import Home from "./Views/Home"
 import Repo from "./Views/Repo"
