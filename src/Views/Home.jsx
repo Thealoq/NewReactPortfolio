@@ -13,10 +13,10 @@ export default function Home() {
             )
             .then(data => {
                 setData(data.data);
+                setTitle("Click Me")
             });
     }, []);
     function ChangeText() {
-        console.log(User);
         if (User) {
             if (User.spotify) {
                 setTitle(`${User?.spotify.song} Dinliyor`)
@@ -80,7 +80,7 @@ export default function Home() {
         <div className="flex justify-center items-center flex-col">
             <div ref={refim} onClick={t => ClickEvent()} className="cursor-pointer  bg-center bg-cover bg-repeat flex justify-center items-center mt-10 w-[230px] rounded-lg h-20 bg-gradient-to-r from-[#576076] to-[#455a7d]  ">
                 <div>
-                    <span className='select-none'>{title}</span>
+                    <span className='select-none'>{title ?  title : ChangeText()}</span>
                 </div>
             </div>
             <div className="flex flex-wrap mt-2 w-[240px] ">
