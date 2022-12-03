@@ -7,7 +7,7 @@ export default function Home() {
             .then(response => response.json()
             )
             .then(data => {
-                setData(data.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 5));
+                setData(data.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 8));
             });
     }, []);
     return (
