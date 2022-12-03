@@ -13,11 +13,10 @@ export default function Home() {
             )
             .then(data => {
                 setData(data.data);
-                setTitle(data ? "Online 🟢" : "Ofline 🔴")
             });
-            ChangeText()
     }, []);
     function ChangeText() {
+        console.log(User);
         if (User) {
             if (User.spotify) {
                 setTitle(`${User?.spotify.song} Dinliyor`)
