@@ -88,7 +88,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap mt-2 w-[240px] ">
+            <div className="flex flex-wrap  w-[240px] ">
                 {
                     array.map((x, i) => {
                         if(i == 3) {

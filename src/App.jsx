@@ -12,7 +12,8 @@ import About from "./Views/About"
 export default function App() {
   return (
     <div>
-      <div className="flex justify-center items-center ">
+        <div className="context top-[18vh]">
+        <div className="flex justify-center items-center inset-0 m-auto">
         <div className="w-[300px] bg-[#283044] rounded-t-[20px] text-white h-[530px]  flex justify-center items-start">
           <div className="flex justify-center items-center flex-col">
             <Router>
@@ -27,6 +28,21 @@ export default function App() {
         </div>
       </div>
       <Button />
+        </div>
+        <div class="area" >
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div >
     </div>
   )
 }
