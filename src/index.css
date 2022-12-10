@@ -20,8 +20,7 @@ body{
 .context {
     width: 100%;
     position: absolute;
-    
-    
+    z-index: 1;
 }
 
 .context h1{
